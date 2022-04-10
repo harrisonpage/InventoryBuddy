@@ -1,0 +1,10 @@
+name: InventoryBuddy
+version: 1.0.0
+author: harrison
+main: love.toad.InventoryBuddy
+api-version: 1.18
+description: Automatically arrange inventory
+commands:
+   inventory:
+      description: Manage inventory with load and save
+      usage: /inventory
