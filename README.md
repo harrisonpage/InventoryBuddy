@@ -6,7 +6,13 @@ Minecraft plugin to automatically arrange inventory by loading/saving an invento
 * `/inventory load` will apply the saved inventory layout
 * `/inventory list` will show an existing layout
 
+## Screenshot
+
 ![Screenshot](screenshot.png)
+
+Screenshot of commands `/inventory save` and `/inventory list`.
+
+Also featured in screenshot: [Lodestar plugin](https://github.com/harrisonpage/Lodestar)
 
 # Building
 
