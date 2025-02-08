@@ -1,6 +1,6 @@
 # InventoryBuddy
 
-Automatically arrange inventory by loading/saving an inventory layout.
+Minecraft plugin to automatically arrange inventory by loading/saving an inventory layout.
 
 * `/inventory save` will store an inventory layout: a list of items and slot numbers
 * `/inventory load` will apply the saved inventory layout
@@ -8,7 +8,9 @@ Automatically arrange inventory by loading/saving an inventory layout.
 
 # Edge Cases
 
-## Player is missing items
+This is a little boring and pedantic but whatever, here we go:
+
+## Player is missing expected items
 
 * Player saves an inventory layout
 * Player drops item(s)
@@ -47,9 +49,9 @@ mvn clean ; mvn package
 # Install
 
 ```
-./build.sh
+cp target/InventoryBuddy-1.0.0.jar ~/minecraft/plugins/
 ```
 
 # Etc
 
-Est. 9-Apr-2022
+Created by [harrison.page](https://harrison.page) on 9-Apr-2022
