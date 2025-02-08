@@ -1,0 +1,10 @@
+name: InventoryBuddy
+version: 1.0.0
+author: harrison.page
+main: love.toad.InventoryBuddy
+api-version: 1.18
+description: Inventory management made easy
+commands:
+   inventory:
+      description: Show help e.g. /inventory [load | save | list]
+      usage: /inventory
