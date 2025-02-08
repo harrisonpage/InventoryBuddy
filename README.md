@@ -6,11 +6,27 @@ Minecraft plugin to automatically arrange inventory by loading/saving an invento
 * `/inventory load` will apply the saved inventory layout
 * `/inventory list` will show an existing layout
 
+![Screenshot](screenshot.png)
+
+# Building
+
+```
+mvn clean ; mvn package
+```
+
+# Install
+
+```
+cp target/InventoryBuddy-1.0.0.jar ~/minecraft/plugins/
+```
+
 # Edge Cases
 
-This is a little boring and pedantic but whatever, here we go:
+Boring and pedantic implementation details:
 
 ## Player is missing expected items
+
+Steps to reproduce:
 
 * Player saves an inventory layout
 * Player drops item(s)
@@ -23,6 +39,8 @@ InventoryBuddy: [WARNING] Items missing from inventory: GOLDEN_APPLE, TNT
 ```
 
 ## Player has unexpected items
+
+Steps to reproduce:
 
 * Player saves an inventory layout
 * Player gathers more items
@@ -39,18 +57,6 @@ The unexpected items will be placed in empty slots.
 ## Player has duplicate items
 
 This is fine but if you are carrying two axes and you are wielding a favorite axe, it may not necessarily appear where you expect.
-
-# Building
-
-```
-mvn clean ; mvn package
-```
-
-# Install
-
-```
-cp target/InventoryBuddy-1.0.0.jar ~/minecraft/plugins/
-```
 
 # Etc
 
